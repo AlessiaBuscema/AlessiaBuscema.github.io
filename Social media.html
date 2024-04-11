@@ -1,0 +1,133 @@
+<<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0;">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="socialmedia.css">
+        
+    
+         
+         <title>Bocciofila</title>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+       
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+         
+         
+         <style>
+            body {
+          background-color: #000;
+          font-family: Helvetica;
+          }
+          
+         .row { 
+          margin-right: 0px;
+          padding-left: 30px;
+          padding-right: 0px;
+          width: 100%;
+          }
+          
+        </style>
+    
+        
+    </head>
+    <body >
+    
+        <header class="container-fluid">
+           
+                <div class="col-md-12">
+                    <a href="Pagina home.html">
+                        <img id="logo" src="foto/logo bianco_Tavola disegno 1 copia 2.png" alt="Logo" width="50" height="50">
+                    </a>
+                
+                    <button id="menu-apri" class="menu-apri">
+                        <a class="burger"><i class="fas fa-bars"></i></a>
+                       </button>
+                </div>
+    
+    
+                
+                        
+        </header>
+    
+        <nav class="overlay">
+            <div class="container-overlay">
+                <ul class="menu">
+                    <li><a href="Portfolio.html">Progetti</a></li>
+                    <li><a href="Fotografie.html">Fotografie</a></li>
+                    <li><a href="su di me.html">Su di me</a></li>
+                    <li><a href="Contatti.html">Contatti</a></li>
+                </ul>
+                <button id="menu-chiudi" class="menu-chiudi">
+                    <a class="x">x</a>
+                </button>
+            </div>
+        </nav>
+          
+           
+           <script>
+             document.addEventListener('DOMContentLoaded', function() {
+              const menuApri = document.getElementById('menu-apri');
+              const menuChiudi = document.getElementById('menu-chiudi');
+              const overlay = document.querySelector('.overlay');
+      
+              menuApri.addEventListener('click', function() {
+                overlay.style.display = 'block';
+              });
+          
+              menuChiudi.addEventListener('click', function() {
+                overlay.style.display = 'none';
+              });
+          
+              overlay.addEventListener('click', function(event) {
+               if (!event.target.closest('#menu-chiudi')) {
+                return;
+               } 
+              });
+             });
+           </script>
+
+<div clas="row"> 
+<div class="poster-container" class="col-md-12">
+    <div class="posters">
+        <!-- Inserisci i tuoi poster qui -->
+        <div class="poster"><img src="foto/1.png" alt="Poster 1"></div>
+        <div class="poster"><img src="foto/2.png" alt="Poster 2"></div>
+        <div class="poster"><img src="foto/3.png" alt="Poster 3"></div>
+        <div class="poster"><img src="foto/4.png" alt="Poster 4"></div>
+        <div class="poster"><img src="foto/5.png" alt="Poster 5"></div>
+        <div class="poster"><img src="foto/6.png" alt="Poster 6"></div>
+        <div class="poster"><img src="foto/7.png" alt="Poster 7"></div>
+        <div class="poster"><img src="foto/8.png" alt="Poster 8"></div>
+       
+        <div class="poster"><img src="foto/9.png" alt="Poster 10"></div>
+        <div class="poster"><img src="foto/10.png" alt="Poster 11"></div>
+        <div class="poster"><img src="foto/11.png" alt="Poster 12"></div>
+        <div class="poster"><img src="foto/12.png" alt="Poster 13"></div>
+       
+        <!-- Aggiungi altri poster secondo necessità -->
+    </div>
+
+</div>
+</div>
+
+
+<!-- Utilizza la classe corretta "class" invece di "clas" -->
+    <div id="descrizione" class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-sm-">
+                <h2>BOCCIOFILA</h2>
+                <h3>Nuova identità visiva </h3>
+                <p>Nel cuore di Torino, la Bocciofila Vanchiglietta rappresenta un punto di riferimento storico e un'oasi di ospitalità dove trascorrere giornate all'insegna del divertimento tra bocce, buon cibo, partite a carte e progetti sociali avvincenti.<br>
+                Il nostro lavoro di analisi e report mirava a evidenziare le peculiarità di questo circolo storico confrontandolo con i suoi competitor e comparable, allo scopo di formulare una proposta progettuale unica.<br>
+                Durante la ricerca è emerso un dato rilevante: la mancanza di un'identità visiva distintiva che potesse non solo rendere la Bocciofila facilmente riconoscibile, ma anche aumentare l'interesse e l'engagement nei confronti del circolo.<br>
+                La nostra azione ha preso forma attraverso la creazione di una nuova identità visiva, caratterizzata da una simpatica e ironica mascotte che personifica la stessa essenza della Bocciofila, al fine di attrarre sempre più persone a partecipare attivamente alla vita del circolo.<br>
+                Ogni elemento di questa nuova identità è stato studiato per riflettere la pluralità del target della Bocciofila. Il logo, ad esempio, si basa su una boccia stilizzata e su una combinazione di font (uno graziato e uno a bastoni) che unisce tradizione e modernità, rivolgendosi sia al pubblico più adulto che a quello più giovane. La palette cromatica scelta contribuisce a definire l'immagine del circolo, con colori caldi che richiamano la natura e la tradizione, applicati anche alle immagini attraverso un filtro apposito.<br>
+                Il progetto ha inoltre compreso uno studio dettagliato della campagna di comunicazione, dalla selezione delle rubriche e dei canali digitali alla definizione di un calendario editoriale di tre mesi, garantendo così un'ampia visibilità e coinvolgimento della comunità.</p>
+            </div>
+            <div class="col-md-8 col-sm-6">
+                <img src="foto/tavola boccia-15-15.png" alt="Immagine" class="img-fluid">
+            </div>
+        </div>
+    </div>

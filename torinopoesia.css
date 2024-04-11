@@ -1,0 +1,126 @@
+
+
+
+
+.poster-container {
+    margin-top: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.posters {
+    display: flex;
+    animation: scroll 20s linear infinite;
+    width: max-content;
+}
+
+.poster {
+    height: 300px;
+    width: 200px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.row {
+    display: flex; /* Aggiunto display flex */
+    margin: 20px;
+}
+
+#descrizione .col-md-4 {
+    padding-top: 35px;
+}
+
+#row1 {
+    height: 300px; /* Altezza sufficiente per attivare l'animazione */
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#row1 img {
+    height: 100%;
+    width: auto;
+}
+
+#row1 .col-md-8 img {
+    transition: transform 2s ease;
+    transform: translateX(100%);
+}
+
+#row1.active .col-md-8 img {
+    transform: translateX(0);
+}
+
+#row1 .col-md-8 {
+    padding-left: 80px;
+}
+
+.col-md-4 p,
+.col-md-4 h3,
+.col-md-4 h2 {
+    color: #fff;
+}
+
+.col-md-4 p {
+    font-weight: lighter; /* Rende il testo più leggero */
+    line-height: 1.5; 
+}
+
+.col-md-4 h2 {
+    font-weight: bolder;
+    margin-bottom: 0; /* Rimuove il margine inferiore */
+}
+
+.col-md-4 h3 {
+    font-weight: lighter;
+    letter-spacing: 1px; 
+    margin-bottom: 20px;
+}
+
+
+ /* Media query per schermi piccoli */
+ @media screen and (max-width: 768px) {
+    .poster-container {
+        margin-top: 100px;
+    }
+
+    
+    .poster {
+        height: 180px;
+        width: 130px;
+        
+    }
+}
+
+
+
+           
+@media screen and (min-width: 769px) and (max-width: 820px)  {
+    .row{
+        margin-top: 100px;
+    .col-md-4{
+        width: 100%;
+    }
+    .col-md-8 {
+        width: 100%;
+    }
+    .col-md-8 img {
+        max-width: 100% ;  
+        margin: 0 auto; 
+    
+}
+}

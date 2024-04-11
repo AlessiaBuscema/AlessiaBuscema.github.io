@@ -1,0 +1,68 @@
+
+#content {
+    margin: 150px auto 0; /* Aggiunto il margine sopra e ridotto il limite massimo */
+    max-width: 1200px;
+}
+
+#content .row {
+    margin-left: -30px; /* Compensazione per l'espansione delle colonne */
+    margin-right: -30px; /* Compensazione per l'espansione delle colonne */
+}
+
+#content .col-md-4 {
+    padding: 0 30px; /* Spazio tra le colonne */
+    margin-bottom: 60px; /* Spazio inferiore tra le colonne */
+}
+
+#content .col-md-4 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Aggiunto box-shadow */
+    transition: transform 0.3s ease-in-out; /* Aggiunto l'effetto di transizione */
+}
+
+#content .col-md-4 img:hover {
+    transform: scale(1.15); /* Ingrossamento al passaggio del mouse */
+}
+
+#content .col-md-4 video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+#content .col-md-4 video:hover {
+    transform: scale(1.15);
+}
+
+#content .col-md-4 video:hover + img {
+    display: none; /* Nasconde l'immagine quando il video è in anteprima */
+}
+
+#content .col-md-4 img {
+    display: block; /* Assicura che l'immagine sia visibile */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+#content .col-md-4 img:hover {
+    transform: scale(1.15);
+}
+
+@media screen and (min-width: 769px) and (max-width: 820px){
+    .col-md-4 {
+        width: 50%; /* Fai in modo che la colonna da 4 occupi metà larghezza */
+    }
+}
+
+

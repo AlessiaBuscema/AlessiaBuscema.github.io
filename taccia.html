@@ -1,0 +1,129 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0;">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="taccia.css">
+    
+
+     
+     <title>Taccia</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+     
+     <style>
+        body {
+      background-color: #000;
+      font-family: Helvetica;
+      }
+      
+     .row { 
+      margin-right: 0px;
+      padding-left: 30px;
+      padding-right: 0px;
+      width: 100%;
+      }
+      
+    </style>
+
+    
+</head>
+<body >
+
+    <header class="container-fluid">
+       
+            <div class="col-md-12">
+                <a href="Pagina home.html">
+                    <img id="logo" src="foto/logo bianco_Tavola disegno 1 copia 2.png" alt="Logo" width="50" height="50">
+                </a>
+            
+                <button id="menu-apri" class="menu-apri">
+                    <a class="burger"><i class="fas fa-bars"></i></a>
+                   </button>
+            </div>
+
+
+            
+                    
+    </header>
+
+    <nav class="overlay">
+        <div class="container-overlay">
+            <ul class="menu">
+                <li><a href="Portfolio.html">Progetti</a></li>
+                <li><a href="Fotografie.html">Fotografie</a></li>
+                <li><a href="su di me.html">Su di me</a></li>
+                <li><a href="Contatti.html">Contatti</a></li>
+            </ul>
+            <button id="menu-chiudi" class="menu-chiudi">
+                <a class="x">x</a>
+            </button>
+        </div>
+    </nav>
+      
+       
+       <script>
+         document.addEventListener('DOMContentLoaded', function() {
+          const menuApri = document.getElementById('menu-apri');
+          const menuChiudi = document.getElementById('menu-chiudi');
+          const overlay = document.querySelector('.overlay');
+  
+          menuApri.addEventListener('click', function() {
+            overlay.style.display = 'block';
+          });
+      
+          menuChiudi.addEventListener('click', function() {
+            overlay.style.display = 'none';
+          });
+      
+          overlay.addEventListener('click', function(event) {
+           if (!event.target.closest('#menu-chiudi')) {
+            return;
+           } 
+          });
+         });
+       </script>
+    
+<div class="poster-container">
+    <div class="posters">
+        <!-- Inserisci i tuoi poster qui -->
+        <div class="poster"><img src="foto/alessia 1.jpg" alt="Poster 1"></div>
+        <div class="poster"><img src="foto/alessia 2.jpg" alt="Poster 2"></div>
+        <div class="poster"><img src="foto/alessia 3.jpg" alt="Poster 3"></div>
+        <div class="poster"><img src="foto/alessia 4.jpg" alt="Poster 4"></div>
+        <div class="poster"><img src="foto/alessia 5.jpg" alt="Poster 5"></div>
+        <div class="poster"><img src="foto/alessia 7.jpg" alt="Poster 6"></div>
+        <div class="poster"><img src="foto/alessia 8.jpg" alt="Poster 7"></div>
+        <div class="poster"><img src="foto/alessia 9.jpg" alt="Poster 8"></div>
+        <div class="poster"><img src="foto/alessia 11.jpg" alt="Poster 11"></div>
+        <div class="poster"><img src="foto/alessia 12.jpg" alt="Poster 12"></div>
+        <div class="poster"><img src="foto/alessia 13.jpg" alt="Poster 13"></div>
+        <div class="poster"><img src="foto/alessia 14.jpg" alt="Poster 14"></div>
+        <!-- Aggiungi altri poster secondo necessità -->
+    </div>
+</div>
+
+
+<div id=descrizione class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>TACCIA</h2>
+            <h3> Analisi oggetto di design </h3>
+
+            <p> Questo progetto celebra l'illuminante presenza della Lampada Taccia, un'icona concepita dai geniali fratelli Pier Giacomo e Achille Castiglioni. 
+                Oltre a essere una fonte di luce, la Taccia incarna un simbolo di successo e sofisticatezza, descritta con grazia da Achille Castiglioni come la "Mercedes delle lampade", grazie alla sua elegante silhouette che evoca le classiche colonne greche.
+                Il progetto ha preso vita attraverso un'attenta analisi della lampada, esplorandone ogni dettaglio tecnico e stilistico con curiosità e rigore.
+                L'obiettivo principale è stato quello di narrare la sua storia in modo originale e coinvolgente, trasportando la lampada in un contesto suggestivo e affascinante, come la maestosa Valle dei Templi di Agrigento.
+                In questo scenario epico, la lampada ha assunto una nuova identità visiva, mettendo in luce il suo ricco passato e sottolineando la qualità intrinseca ed l'eleganza che la contraddistinguono.
+        </div>
+        <div class="col-md-8">
+            <img src="foto/immagine taccia.png" alt="Immagine" class="img-fluid">
+        
+            <!-- Contenuto della colonna di destra -->
+        </div>
+    </div>
+</div>

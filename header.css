@@ -1,0 +1,248 @@
+ 
+        .container-fluid {
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+        
+        .hidden {
+            display: none; /* Nasconde la homepage */
+            }
+        
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background-color: #000000;
+            border-bottom: 1px solid b;
+            z-index: 998;
+        }
+        
+        #logo {
+            width: 70px;
+            height: 60px;
+            top: 20;
+            left: 30;
+            position: absolute;
+            } 
+        
+        
+            .menu-apri {
+                float: right;
+                align-items: center;
+                background-color: transparent;
+                border: none;
+                z-index: 1100; 
+                }
+               
+                   
+            
+            #menu-apri {
+            top: 15;
+            right: 30;
+            position: absolute;
+        
+            }
+            
+            .burger {
+                font-size: 30pt;
+                color: #fff;
+                font-family: Poppins;
+                text-decoration: none;
+                padding-right: 5px;
+                }
+                
+            .menu-apri a:hover {
+            
+                text-decoration: none;
+                }
+        
+                .menu-chiudi {
+                    float: right;
+                    font-size: 40pt;
+                    color: #000000;
+                    font-family: Helvetica;
+                    border: none;
+                    position: relative;
+                    background-color: transparent;
+                    line-height: normal;
+                    }
+                
+                .menu-chiudi a {
+                    text-align: center;
+                    transition: transform 0.3s ease; /* Aggiunge una transizione per un effetto pi� fluido */
+                    }
+                
+                .menu-chiudi a:hover {
+                    color: #ffffff;
+                    text-decoration: none;    
+                    }
+                    
+                .x {
+                    
+                    padding-bottom: 12px;
+                    padding-right: 20px;
+                    padding-left: 20px;
+                    color: #000000;
+                    text-decoration: none;
+                    display: block;
+                    
+                    }
+                    
+                    .overlay {
+                        display: none;
+                        position: fixed;
+                        top: 0;
+                        right: 0; /* Posiziona il menu overlay sulla destra dello schermo */
+                        width: 500px; /* Imposta la larghezza del menu overlay */
+                        height: 70%; /* Mantieni l'altezza al 100% per coprire l'intera altezza dello schermo */
+                        background-color: #759e72;
+                        z-index: 1000;
+                        transition: width 0.3s ease; /* Aggiungi una transizione per un effetto più fluido */
+                        border-top-left-radius: 0px; /* Angoli smussati in alto a sinistra */
+                        border-bottom-left-radius: 300px; /* Angoli smussati in basso a sinistra */
+                        box-shadow: 0 0 70px rgba(203, 203, 203, 0.522); /* Aggiunge un bagliore esterno */
+                     }      
+                    
+                    
+                    .container-overlay {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    
+                
+                    .menu {
+                        position: absolute;
+                        top: 50%; /* Posiziona il menu al 50% dell'altezza del contenitore genitore */
+                        right: 0;
+                        transform: translateY(-50%); /* Trasla il menu verso l'alto del 50% della sua altezza */
+                        text-align: right;
+                        padding-right: 20px;
+                    }
+                    
+                    .menu a {
+                        font-family: Helvetica;
+                        color: #000000;
+                        font-size: 45pt;
+                        text-decoration: none;
+                        font-weight: bold;
+                        transition: padding-right 0.3s ease;
+                     } /* Aggiungi una transizione per un effetto più fluido */
+                    
+                    .menu li {
+                        list-style: none;
+                        line-height: 1.2;
+                    }
+                    
+                    .menu a:hover {
+                        padding-right: 25px; 
+                        color: #fff;
+    
+                    }
+     
+    @media screen and (max-width: 768px)  {
+            header {
+                height: 80px; /* Riduci l'altezza dell'header */
+            }
+            
+            #logo {
+                width: 50px;
+                height: 40px; /* Riduci le dimensioni del logo */
+                top: 15px; /* Regola la posizione del logo */
+                left: 20px; /* Regola la posizione del logo */
+            }
+            
+            .menu a {
+                font-size: 18px;
+            
+            }
+            .burger {
+                font-size: 20pt;
+                top: 20px;
+                 right: 20px;/* Riduci le dimensioni del burger menu */
+            }
+            
+            .overlay {
+                height: 30vh; /* Imposta l'altezza massima al 30% dell'altezza dello schermo */
+                width: 35%; /* Mantieni la larghezza del menu overlay */
+            }
+            
+            
+            .menu-chiudi {
+                font-size: 20pt; /* Riduci le dimensioni del menu chiuso */
+            }
+            
+            
+            .col-md-8 img {
+                margin-top: 50px; /* Riduci il margine superiore dell'immagine */
+            }  
+            
+            .content h1{
+                font-size: 18pt;
+                margin-top: 130px;
+            }
+            
+             .col-md-4 p{ 
+                font-size: 12pt; 
+                
+            }
+            .container {
+                height: 70%;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                
+              }
+            
+            
+            }
+                 
+            
+                
+            
+                
+
+        
+
+         
+@media screen and (min-width: 769px) and (max-width: 820px)  {
+header {
+    height: 90px; /* Riduci l'altezza dell'header */
+}
+
+#logo {
+    width: 60px;
+    height: 50px; /* Riduci le dimensioni del logo */
+    top: 20px; /* Regola la posizione del logo */
+    left: 20px; /* Regola la posizione del logo */
+}
+
+.menu a {
+    font-size: 30px;
+
+}
+.burger {
+    font-size: 30pt;
+    top: 20px;
+     right: 20px;/* Riduci le dimensioni del burger menu */
+}
+
+.overlay {
+    height: 30vh; /* Imposta l'altezza massima al 30% dell'altezza dello schermo */
+    width: 35%; /* Mantieni la larghezza del menu overlay */
+}
+
+
+.menu-chiudi {
+    font-size: 30pt; /* Riduci le dimensioni del menu chiuso */
+}
+
+
+
+}
+     
+
+    
+
+    

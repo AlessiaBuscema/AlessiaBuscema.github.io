@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0;">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="storytelling.css">
+    
+
+     
+     <title>Tra palcoscenico e realtà</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+     
+     <style>
+        body {
+      background-color: #000;
+      font-family: Helvetica;
+      }
+      
+     .row { 
+      margin-right: 0px;
+      padding-left: 30px;
+      padding-right: 0px;
+      width: 100%;
+      }
+      
+    </style>
+
+    
+</head>
+<body >
+
+    <header class="container-fluid">
+       
+            <div class="col-md-12">
+                <a href="Pagina home.html">
+                    <img id="logo" src="foto/logo bianco_Tavola disegno 1 copia 2.png" alt="Logo" width="50" height="50">
+                </a>
+            
+                <button id="menu-apri" class="menu-apri">
+                    <a class="burger"><i class="fas fa-bars"></i></a>
+                   </button>
+            </div>
+
+
+            
+                    
+    </header>
+
+    <nav class="overlay">
+        <div class="container-overlay">
+            <ul class="menu">
+                <li><a href="Portfolio.html">Progetti</a></li>
+                <li><a href="Fotografie.html">Fotografie</a></li>
+                <li><a href="su di me.html">Su di me</a></li>
+                <li><a href="Contatti.html">Contatti</a></li>
+            </ul>
+            <button id="menu-chiudi" class="menu-chiudi">
+                <a class="x">x</a>
+            </button>
+        </div>
+    </nav>
+      
+       
+       <script>
+         document.addEventListener('DOMContentLoaded', function() {
+          const menuApri = document.getElementById('menu-apri');
+          const menuChiudi = document.getElementById('menu-chiudi');
+          const overlay = document.querySelector('.overlay');
+  
+          menuApri.addEventListener('click', function() {
+            overlay.style.display = 'block';
+          });
+      
+          menuChiudi.addEventListener('click', function() {
+            overlay.style.display = 'none';
+          });
+      
+          overlay.addEventListener('click', function(event) {
+           if (!event.target.closest('#menu-chiudi')) {
+            return;
+           } 
+          });
+         });
+       </script>
+
+
+
+    <div class="poster-container">
+        <div class="posters">
+            <!-- Inserisci i tuoi poster qui -->
+            <div class="poster"><img src="foto/storyboard_Tavola disegno 1.png" alt="Poster 1"></div>
+            <div class="poster"><img src="foto/storyboard_Tavola disegno 1 copia.png" alt="Poster 2"></div>
+            <div class="poster"><img src="foto/storyboard_Tavola disegno 1 copia 2.png" alt="Poster 3"></div>
+            <div class="poster"><img src="foto/storyboard_Tavola disegno 1 copia 3.png" alt="Poster 4"></div>
+            <div class="poster"><img src="foto/storyboard_Tavola disegno 1 copia 4.png" alt="Poster 5"></div>
+            <div class="poster"><img src="foto/storyboard_Tavola disegno 1 copia 5.png" alt="Poster 6"></div>
+            <div class="poster"><img src="foto/storyboard_Tavola disegno 1 copia 6.png" alt="Poster 7"></div>
+            <div class="poster"><img src="foto/storyboard_Tavola disegno 1 copia 7.png" alt="Poster 8"></div>
+            <div class="poster"><img src="foto/storyboard_Tavola disegno 1 copia 8.png" alt="Poster 9"></div>
+            <div class="poster"><img src="foto/storyboard_Tavola disegno 1 copia 9.png" alt="Poster 10"></div>
+            <div class="poster"><img src="foto/storyboard_Tavola disegno 1 copia 10.png" alt="Poster 11"></div>
+            <div class="poster"><img src="foto/storyboard_Tavola disegno 1 copia 11.png" alt="Poster 12"></div>
+            <div class="poster"><img src="foto/storyboard_Tavola disegno 1 copia 12.png" alt="Poster 13"></div>
+            <div class="poster"><img src="foto/storyboard_Tavola disegno 1 copia 13.png" alt="Poster 14"></div>
+            <div class="poster"><img src="foto/storyboard_Tavola disegno 1 copia 14.png" alt="Poster 15"></div>
+            <div class="poster"><img src="foto/s" alt="Poster 15"></div>
+            <!-- Aggiungi altri poster secondo necessità -->
+        </div>
+    </div>
+
+    <div id=descrizione class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Tra palcoscenico e realtà</h2>
+                <p> Il progetto "Tra palcoscenico e realtà" trae ispirazione dalla celebre opera d’arte di Giorgio De Chirico, "Le Muse Inquietanti". Tutti gli elementi presenti al suo interno si sono rivelati essenziali per la  costruzione di un nuovo racconto: le statue, la duplice ambientazione, i  colori e le luci.
+                    Il protagonista di questa narrazione è un individuo intriso di insicurezza che si rifugia dietro una maschera. Quest'ultima costituisce il filo conduttore del racconto, rappresentando il mezzo attraverso il quale nasconde la verità per preservare la propria profondità e sfuggire dalla realtà.
+                    Questa insicurezza trova un’ulteriore esemplificazione nella duplice ambientazione, composta da un teatro, simbolo del mondo della finzione dove le persone con disagi sociali si rifugiano anche nella realtà; e dalla città, rappresentante la cruda realtà con cui il protagonista deve confrontarsi ogni giorno.
+                    Lo scopo del video è mettere in luce l'evoluzione interiore del protagonista. Egli inizia il suo percorso con una "seconda pelle", una costruzione fittizia di un "falso sé" che nel tempo lo ha reso desiderabile agli occhi degli altri, apparentemente protetto ma privo della propria autenticità e inconsapevole di ciò.
+                    Il cambiamento del protagonista avviene quando, di fronte a qualcuno che indossa una maschera, si rende conto di non essere solo nell'affrontare questo disagio. Affrontando il viaggio in compagnia, riesce a trovare la forza necessaria per riscoprire la propria autenticità.
+                    Il progetto invita a recuperare quanto prima la propria autenticità, evitando di fare la stessa fine de "Il Fu Mattia Pascal", che, consapevole troppo tardi delle cento maschere indossate, si ritrova completamente privo della sua vera identità sociale.
+            </div>
+            <div class="col-md-8">
+                <img src="foto/immagine_Tavola disegno 1 copia 6.png" alt="Immagine" class="img-fluid">
+                <video class="img-fluid" controls>
+                    <source src="foto/Tra palcoscenico e realtà.mp4" type="video/mp4">
+                    Il tuo browser non supporta il tag video.
+                </video>
+                <!-- Contenuto della colonna di destra -->
+            </div>
+        </div>
+    </div>
+        </body>
+            </html>
